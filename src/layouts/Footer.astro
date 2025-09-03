@@ -1,0 +1,54 @@
+---
+import GroupFooterNav from "../components/blocks/GroupFooterNav.astro";
+import Container from "../components/shared/Container.astro";
+import FooterNav from "../components/shared/FooterNav.astro";
+import Paragraph from "../components/shared/Paragraph.astro";
+
+const footerNav1 = [
+];
+
+const footerSupport = [
+];
+
+const footerCompany = [
+];
+const footerLegal = [
+];
+---
+
+<div class="relative mt-16 bg-base-200 dark:bg-base-dark-800">
+  <footer class="relative pt-28 rounded-t-3xl">
+    <Container className="pb-8 relative overflow-auto ">
+      <div
+        class="grid grid-cols-2 lg:grid-cols-3 lg:items-stretch gap-8 relative"
+      >
+        <div class="col-span-2 lg:col-span-1 h-auto flex flex-col">
+          <div class="h-full">
+            <a href="#" class="relative flex items-center gap-3 mb-5">
+              <div class="inline-flex text-lg font-semibold text-heading-1">
+                AutoLackDoc Burscheid 
+              </div>
+            </a>
+            <a href="impressum" class="relative flex items-center gap-3">
+              <div class="inline-flex font-semibold">Impressum</div>
+            </a>
+            <a href="datenschutz" class="relative flex items-center gap-3">
+              <div class="inline-flex font-semibold">Datenschutz</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </Container>
+    <div class="py-2 relative">
+      <Container>
+        <div
+          class="flex justify-between items-center gap-6 md:text-lg text-heading-3"
+        >
+          <div>
+            &copy; <span id="year"></span> AutoLackDoc Burscheid {new Date().getFullYear()}
+          </div>
+        </div>
+      </Container>
+    </div>
+  </footer>
+</div>

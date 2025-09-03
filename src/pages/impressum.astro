@@ -1,0 +1,43 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Title from "../components/shared/Title.astro";
+import Container from "../components/shared/Container.astro";
+import Paragraph from "../components/shared/Paragraph.astro";
+
+const { className = "" } = Astro.props;
+---
+
+
+<Layout title="Autolackdoc Burscheid" disableNav={true}>
+  <main class="flex flex-col gap-y-20 md:gap-y-40 overflow-hidden">
+    <section class=`relative  ${className} w-full h-[80vh]`>
+  <div class="w-full h-[80vh] pt-[100px]">
+    <div
+      class="w-full h-full grid grid-cols-1 md:grid-cols-2 justify-end bg-base-100 dark:bg-base-dark-900"
+    >
+      <div class="justify-center flex flex-col text-left md:ml-auto">
+  <Container
+    className="mx-auto flex flex-col"
+    size="full"
+  >
+    <Title>Impressum</Title2>
+  </Container>
+  <Container size="full">
+    <div class="md:text-lg font-bold">
+      <p class="mb-3">AutoLackDoc Burscheid</p>
+      <p>Industriestraße 8</p>
+      <p class="mb-3">51399 Burscheid</p>
+      <p>Telefon: <a class="text-primary-500" href="tel:02174 6718848">02174 6718848</a></p>
+      <p class="mb-3">E-Mail: <a class="text-primary-500" href="mailto:info@autolackdoc-burscheid.de">info@autolackdoc-burscheid.de</a></p>
+      <p class="mb-3">Umsatzsteuer-ID: DE1111111</p>
+      <p>Hinweis gemäß § 36 Verbraucherstreitbeilegungsgesetz (VSBG):</p>
+      <p>Wir sind zur Teilnahme an einem Streitbeilegungsverfahren</p>
+      <p>vor einer Verbraucherschlichtungsstelle weder verpflichtet noch bereit.</p>
+    </div>
+  </Container>
+      </div>
+    </div>
+  </div>
+    </section>
+  </main>
+</Layout>
