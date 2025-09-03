@@ -1,7 +1,3 @@
-import img1 from "./assets/person1.png";
-import img2 from "./assets/person2.png";
-import img3 from "./assets/person3.png";
-
 export const testimonialsSection = {
   title: "Kundenbewertungen",
   subheading1_1: "Vergewissern Sie sich, dass Sie in guten Händen sind",
@@ -9,21 +5,18 @@ export const testimonialsSection = {
   testimonials: [
     {
       name: "Nando",
-      visual: img1,
       occupation: "",
       quote:
         "Ich bin absolut begeistert von der Arbeit bei Autolackdoc. Herr Gangi ist sehr freundlich, professionell und arbeiten schnell und zuverlässig. Der Service war top und das Ergebnis hat meine Erwartungen übertroffen. Ich kann Autolackdoc nur weiterempfehlen.",
     },
     {
       name: "Ralf Scholten",
-      visual: img2,
       occupation: "",
       quote:
         "Super freundlich,, super schnell und vor allem super Arbeit zum sehr fairen Preis. Besser geht's nicht !",
     },
     {
       name: "Sophie Chen",
-      visual: img3,
       occupation: "",
       quote:
         "Mal ein fachkundiger und fairer Beulendocktor. Saubere, fundierte und nachhaltige Durchführung der Arbeiten. Die Beratung ist fachkompetent mit fairen Preisen. Ich kann die Werkstatt jedem empfehlen, der sein Auto in guten Händen wissen will.",
