@@ -13,10 +13,13 @@ const { className } = Astro.props;
 ---
 
 <section id="leistungen" class=`${className}`>
-  <Container size="wide">
+  <Container size="wide"
+  className="mx-auto flex flex-col items-center justify-center text-center"
+  >
     <Title2>{servicesSectionData.title}</Title2>
   </Container>
-  <Container size="wide">
+  <Container size="wide"
+  className="mx-auto flex flex-col items-center justify-center text-center">
     <div class="grid grid-col-1 md:grid-cols-3 lg:grid-cols-4 gap-y-2 gap-x-4">
       <ServiceCopyTextCard
         className="md:col-span-2 flex flex-col"
